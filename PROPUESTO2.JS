@@ -1,14 +1,8 @@
 function mostrarTexto() {
-    // Obtener referencia al textarea
-    var txaEntrada = document.getElementById("txaEntrada");
-    
-    // Obtener el valor del textarea
-    var texto = txaEntrada.value;
+    let textArea = document.getElementById('txaEntrada');
+    let pSalida = document.getElementById('pSalida');
 
-    // Mostrar el texto en el párrafo
-    var pSalida = document.getElementById("pSalida");
-    pSalida.textContent = texto;
+    let valor = textArea.value;
+    pSalida.innerText = valor;
+
 }
-
-// Registrar el evento click y asociar la función manejadora
-btnBoton.addEventListener("click", mostrarTexto);
